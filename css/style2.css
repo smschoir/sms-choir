@@ -1,0 +1,603 @@
+/* Left Right alignment */
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+/* Global properties ======================================================== */
+body, html {
+	min-width:770px;
+	min-height:600px;
+}
+body {
+	position:absolute;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	border:0;
+	color:#625d51;
+	font:16px/20px Arial, sans-serif;
+	background:url(http://kmkt-unhas.googlecode.com/svn/trunk/images/bg_pattern.jpg);
+}
+/* Global Structure ============================================================= */
+.glob {
+	position:absolute;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	border:0;
+	top: 0;
+	left: 0;
+}
+.main {
+	position:relative;
+	margin:0 auto;
+	margin-top: 100px;
+	width:990px;
+}
+.main2 {
+	position:relative;
+	margin:0 auto;
+	width:940px;
+}
+.page_spinner {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:99;
+	width:100%;
+	height:100%;
+	background:url(http://kmkt-unhas.googlecode.com/svn/trunk/images/main_spinner.gif) 50% 50% no-repeat #2f2f2f;
+}
+/* ============================= main layout ====================== */
+a {
+	outline:none;
+	color:#847c7e;
+	text-decoration:underline;
+}
+a:hover {
+	color:#fff;
+}
+h1 {
+	position: absolute;
+	left:40%;
+	display:inline-block;
+	padding:0;
+}
+h2 {
+	padding-bottom: 17px;
+	color:#ffc13f;
+	text-transform:uppercase;
+	font:24px 'Showcard Gothic', sans-serif;
+}
+h3 {
+	padding-bottom:10px;
+	color:#fff;
+	text-transform:uppercase;
+	font:18px 'Anton', sans-serif;
+}
+p {
+	padding-bottom:27px;
+}
+#page_services p {
+	padding-bottom:11px;
+}
+.color1 {
+	color:#2f2f2f;
+}
+/* ============================= header ====================== */
+header {
+	height: 110px;
+	text-transform:uppercase;
+}
+#logo {
+	position:absolute;
+	z-index:5;
+	display:block;
+	overflow:hidden;
+	width:194px;
+	height:194px;
+	background:url(http://kmkt-unhas.googlecode.com/svn/trunk/images/logo.png) 0 0 no-repeat;
+	text-indent:100%;
+	white-space:nowrap;
+}
+/* ============================= menu ====================== */
+.menu {
+	position:relative;
+	top:300px;
+	left:29%;
+}
+#menu > li {
+	position:absolute;
+	float:left;
+	margin-left:5px;
+	border:2px solid #101010;
+	background: #2f2f2f;
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.m_icon {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top: -18px;
+	margin-left: -18px;
+}
+.m_iconn {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+.mText {
+	position: absolute;
+	z-index: 0;
+	display: none;
+	padding:10px 0;
+	width: 98%;
+	color: #fff;
+	text-align: center;
+	text-decoration:none;
+	text-transform: none;
+	font-family:30px 'Arial', sans-serif;
+}
+.hintHolder {
+	position: absolute;
+	width: 100%;
+	/* background: url(http://kmkt-unhas.googlecode.com/svn/trunk/images/hint_bg.png) 0 0 no-repeat; */
+}
+#menu > li.item1 {
+	top:0;
+	width: 73px;
+	height: 73px;
+	border:2px solid #101010; 
+	border-radius: 10px 10px 10px 10px; 
+}
+#menu > li.item2 {
+	top:80px;
+	width: 153px;
+	height: 153px;
+}
+#menu > li.item3 {
+	top:80px;
+	left:160px;
+	width: 153px;
+	height: 153px;
+}
+#menu > li.item4 {
+	top:80px;
+	left:320px;
+	width: 73px;
+	height: 73px;
+}
+#menu > li.item5 {
+	top:160px;
+	left:320px;
+	width: 73px;
+	height: 73px;
+}
+#menu > li > a {
+	position:relative;
+	z-index:1;
+	display:block;
+	width: 100%;
+	height: 100%;
+}
+#menu > li .bg {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:0;
+	width:100%;
+	height:100%;
+	background: #000;
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.submenu_1 {
+	position:absolute;
+	top:0px;
+	right:160px;
+	z-index:5;
+	padding:20px 0;
+	width:100%;
+	background:#292b2f;
+}
+.submenu_1 li {
+	position:relative;
+	text-align:center;
+}
+.submenu_1 a {
+	position:relative;
+	z-index:1;
+	display:block;
+	padding:5px 0 !important;
+	color:#ffc13f!important;
+	text-decoration:none;
+	font:12px/20px Times New Roman, sans-serif;
+	font-size:11px;
+}
+.submenu_1 a b {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+	width:100%;
+	height:29px;
+	background:url(http://kmkt-unhas.googlecode.com/svn/trunk/images/submenu_hover.png) 0 0 repeat-x;
+}
+.submenu_2 {
+	position:absolute;
+	top:-20px;
+	right:160px;
+	padding:20px 0;
+	width:100%;
+	background:#292b2f;
+}
+/* ============================= bgGall ======================= */
+#bgStretch img {
+	background:#000;
+}
+/* ============================= splash ====================== */
+#splash {
+	position:absolute;
+	z-index:10;
+	width:100%;
+}
+/* ============================= content ====================== */
+#content {
+	position:relative;
+	z-index: 0;
+	overflow:hidden;
+	width:100%;
+}
+#content > ul > li {
+	position:absolute;
+	left:110px;
+	width:782px;
+	border-bottom:4px solid #ffc13f;
+	background-color:#2f2f2f;
+}
+.page_pad {
+	overflow:hidden;
+	padding:31px 20px 10px 39px;
+}
+.bg_up {
+	height: 223px;
+	background-color:#ffc13f;
+	border-radius: 10px 10px 0px 0px;
+}
+.bg_up_pad{
+	padding: 0 20px;
+	padding-top: 96px;
+	text-align: center;
+}
+.txt1{
+	color: #fff;
+	text-transform: uppercase;
+	font:25px/30px 'Showcard Gothic', sans-serif;
+}
+.txt2{
+	padding-top: 8px;
+	color: #3f3f3f;
+	font:14px 'Times New Roman', sans-serif;
+}
+.box_right{
+	position:relative;
+	left:900px;
+	top:225px;
+	width: 73px;
+	height: 30px;
+	font:20px/30px 'Anton', sans-serif;
+	text-align:center;
+	text-decoration: none;
+	border:1px solid #101010;
+	background: #2f2f2f;
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+.box_right:hover{
+	background: #000;
+	/* background:url(http://kmkt-unhas.googlecode.com/svn/trunk/images/menu_item_hover.png) 0 0; */
+}
+a {
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+.more {
+	display:inline-block;
+	color:#ffc73f;
+	padding-top:5px;
+	text-align:center;
+	text-decoration:none;
+}
+.more:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+.google_map {
+	width:98%;
+	height:295px;
+	border:1px solid #000;
+	background:#fff;
+}
+.address {
+	padding-top:1px;
+	padding-bottom:26px;
+}
+.address > span {
+	display:block;
+	width:170px;
+}
+.mailLink {
+	color: #ffc73f;
+	text-decoration:underline;
+}
+/* ============================= lists ====================== */
+.listWithMarker li {
+	display:block;
+	margin-bottom:1px;
+}
+.listWithMarker li a {
+	display:block;
+	padding: 10px;
+	padding-left: 10px;
+	width: 250px;
+	border-left:1px solid #ffc73f;
+	border-right:1px solid #ffc73f;
+	background: #3d3c39;
+	color:#ffc73f;
+	text-decoration:none;
+	font:14px 'Times New Roman', sans-serif;
+}
+.listWithMarker li a span{
+	z-index: 2;
+	display:inline-block;
+	float: right;
+	margin-right: 10px;
+	width:3px;
+	height:10px;
+	background:url(http://kmkt-unhas.googlecode.com/svn/trunk/images/list_marker.png) 0 -36px no-repeat;
+	text-decoration:none;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+.listWithMarker li a:hover {
+	background: #ffc73f;
+	color:#343330;
+}
+.listWithMarker li a:hover span {
+	background-position: 0 5px;
+}
+/* ============================= footer ====================== */
+footer {
+	position:absolute;
+	bottom:0;
+	z-index:10;
+	padding-top:15px;
+	width:100%;
+	height:44px;
+	background:url(http://kmkt-unhas.googlecode.com/svn/trunk/images/footer_bg.png) 0 0 repeat-x #1f1f1f;
+	color:#626761;
+	text-transform: uppercase;
+	font:14px 'Anton', sans-serif;
+}
+footer a {
+	color:#626761;
+	text-decoration:none;
+}
+footer a:hover {
+	color:#fff;
+}
+footer p {
+	padding-top:10px;
+	padding-bottom:0;
+}
+/*----*/
+.follow-icon {
+	position:relative;
+	display: inline-block;
+	float: right;
+}
+.follow-icon li {
+	float:left;
+	margin-left:3px;
+}
+.follow-icon span {
+	display: inline-block;
+	margin-left:12px;
+	padding-right:0px;
+	width:10px;
+	height:33px;
+	background:url(http://kmkt-unhas.googlecode.com/svn/trunk/images/footer_line.png) 0 4px no-repeat;
+}
+/*----*/
+/* ============================= forms ============================= */
+#form1 {
+	padding-top: 4px;
+}
+#form1 input {
+	margin:0;
+	padding:11px 0 12px 19px;
+	width:198px;
+	border:1px solid #625d51;
+	background-color:#2f2f2f;
+	box-shadow:none;
+}
+#form1 textarea {
+	overflow:auto;
+	margin:0;
+	padding:11px 0 12px 19px;
+	width:438px;
+	height:65px;
+	border:1px solid #625d51;
+	background-color:#2f2f2f;
+	line-height:18px;
+	resize:none;
+}
+#form1 label {
+	position:relative;
+	display:inline-block;
+	min-height:60px;
+}
+#form1 .error, #form1 .empty {
+	position:absolute;
+	top:-1px;
+	right: 3px;
+	display:none;
+	font-size:10px;
+	line-height:18px;
+	color:#fff;
+	text-transform:none;
+}
+#form1 .success {
+	position:absolute;
+	width: 459px;
+	height: 150px;
+	background: #000;
+	border: 1px solid #333;
+	z-index: 1;
+	opacity: 0.9;
+}
+#form1 .success .success_txt {
+	position: relative;
+	top: 45%;
+	color:#fff;
+	text-align: center;
+}
+.btns a {
+	margin:7px 0 0 19px;
+}
+/* Form defaults */
+input, select, textarea {
+	color:#625d51;
+	font:12px/15px Arial, sans-serif;
+}
+/*----------Slider--------------*/
+.slider{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.slider_nav{
+	position: absolute;
+	top: 263px;
+	right: 40px;
+}
+a.nav_item{
+	position: relative;
+	display: inline-block;
+	margin: 0 0 0 5px;
+	width: 12px;
+	height: 12px;
+	background: url(http://kmkt-unhas.googlecode.com/svn/trunk/images/dot2.png) 0 0 no-repeat;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+a.nav_item:hover{
+	background: url(http://kmkt-unhas.googlecode.com/svn/trunk/images/dot1.png) 0 0 no-repeat;
+	color: #f0cb00;
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+a.nav_item.active, a.nav_item.active:hover{
+	background: url(http://kmkt-unhas.googlecode.com/svn/trunk/images/dot1.png) 0 0 no-repeat;
+	text-decoration: none;
+}
+.list-1>li{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.list-1 .txt3{
+	color: #625d51;
+	font:15px/20px Arial, sans-serif;
+	font-style: italic;
+}
+.list-1 .txt4{
+	padding-top: 14px;
+	color: #ffc73f;
+	font:12px/15px Arial, sans-serif;
+}
+.list-1 .txt4 span{
+	color: #625d51;
+}
+
+/*----------End Slider--------------*/
+/*----------statr for fancybox--------------*/
+.sitem_over {
+	position: absolute;
+	z-index: 2;
+	display: none;
+	overflow: hidden;
+	width: 207px;
+	height: 148px;
+	background: url(http://kmkt-unhas.googlecode.com/svn/trunk/images/bgimages.png);
+}
+.sitem_over>strong {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(http://kmkt-unhas.googlecode.com/svn/trunk/images/icon_zoom.png) center no-repeat;
+}
+/*----------end for fancybox--------------*/
+.list-2{
+	margin-top: 5px;
+}
+.list-2 li{
+	float: left;
+	margin: 0 22px 0 0;
+}
+.list-2 figure{
+	width: 207px;
+	
+}
+.list-2 p{
+	margin: 14px 0 0;
+	color: #fff;
+	text-transform: uppercase;
+	font:18px 'Anton', sans-serif;
+}
+::-webkit-scrollbar {width:12px;height:12px;}
+::-webkit-scrollbar-track {background:#D2D2D2;box-shadow:inset 1px 1px 5px #939393;border:1px solid #A9A9A9;}
+::-webkit-scrollbar-thumb {background:#888;border:1px solid #464646;border-radius:2px;box-shadow:inset 2px 2px 5px 0 #B0B0B0}
+.database{
+	border: 1px solid #ffc13f; 
+	display: inline; 
+	float: left; 
+	height: 236px; 
+	width: 114px;
+	line-height: 18px; 
+	margin: 12px; 
+	background: url(http://kmkosipil.googlecode.com/svn/trunk/database/img/bg.profilee.png)
+}
+.dbimg{
+	margin: 3px;
+	height: 142px;  
+	width: 107px;
+}
+.dbfont{
+	margin: 0px 7px 7px; 
+	padding: 10px 0px 0px; 
+	text-align: center;
+	color: #ffc13f; 
+	font-family: Georgia, Times New Roman, serif;
+}
+.dbfont a{
+	color: white; 
+	text-decoration: none;
+}
+.dbfont a:hover {
+	color: #ffc13f;
+}
