@@ -5,7 +5,7 @@ $(document).ready(function(){
     
     // Buat array yang berisi letak gambar - gambar yang akan dijadikan 
     // slideshow. Lalu append gambar gambar tersebut di dalam div #bg-slideshow
-    var bg_img = new Array('images/1.jpg','images/2.jpg','images/3.jpg','images/4.png');
+    var bg_img = new Array('http://placehold.it/300x200/888&text=Item 1','http://placehold.it/300x200/aaa&text=Item 2','http://placehold.it/300x200/444&text=Item 3','images/4.png');
     for (var i=0; i < bg_img.length; i++) {
         imgTemplate = "<img src='" + bg_img[i] + "' alt='image' >";
         $slide.append(imgTemplate);
