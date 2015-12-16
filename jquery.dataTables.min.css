@@ -46,19 +46,19 @@ table.dataTable thead.sorting,
         background - position: center right;
     }
 table.dataTable thead.sorting {
-    background - image: url("../images/sort_both.png");
+    background - image: url("http://1.bp.blogspot.com/-ttjiRNIiQo0/VnGbsbXWyUI/AAAAAAAAACw/8t3xxAP0Q98/s320/sort_both.png");
 }
 table.dataTable thead.sorting_asc {
-    background - image: url("../images/sort_asc.png");
+    background - image: url("http://4.bp.blogspot.com/-51U_PH_Rjig/VnGbsVlVpZI/AAAAAAAAACs/Rd5u59CZM9E/s320/sort_asc.png");
 }
 table.dataTable thead.sorting_desc {
-    background - image: url("../images/sort_desc.png");
+    background - image: url("http://3.bp.blogspot.com/-lF4TCeS0fsQ/VnGbtlfMIbI/AAAAAAAAADE/1HOd48v15Xg/s1600/sort_desc.png");
 }
 table.dataTable thead.sorting_asc_disabled {
-    background - image: url("../images/sort_asc_disabled.png");
+    background - image: url("http://3.bp.blogspot.com/-02kZaJ5bEUk/VnGbsTqFU7I/AAAAAAAAAC0/F_YMoXs-wx8/s320/sort_asc_disabled.png");
 }
 table.dataTable thead.sorting_desc_disabled {
-    background - image: url("../images/sort_desc_disabled.png");
+    background - image: url("http://4.bp.blogspot.com/-qvdTkYm4U1I/VnGbtwEpWRI/AAAAAAAAADI/XW1w36XA7Ww/s320/sort_desc_disabled.png");
 }
 table.dataTable tbody tr {
     background - color: #ffffff;
