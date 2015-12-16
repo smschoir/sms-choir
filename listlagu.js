@@ -1,5 +1,3 @@
 $(document).ready(function() {
-    $('#example').DataTable( {
-        responsive: true
-    } );
-} );
+    $('#example').dataTable({"sPaginationType": "full_numbers"});
+});
